@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/url_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Url To PreLoad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/start_pre_loading_url_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start PreLoad"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/url_edit_text" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/load_web_view_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start WebView"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_pre_loading_url_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
